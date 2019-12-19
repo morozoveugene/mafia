@@ -2,16 +2,17 @@
   "name": "untitled",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "run.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node run.js",
+    "dev": "nodemon run.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.8.1",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {

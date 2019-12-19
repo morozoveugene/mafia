@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  main-node:
+    build:
+      context: .
+      dockerfile: ./deploy/nodejs/Dockerfile
+    container_name: nodejs
+    restart: always
+    ports:
+      - '4444:4444'
+    env_file: .envs/.node
+    volumes:
+      - .:/app

@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 4444;
 const routs = require('./modules/routers');
+const dotenv = require('dotenv');
+
+dotenv.config({ path: '.envs/.node' });
 
 
 // App config

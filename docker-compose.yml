@@ -8,7 +8,7 @@ services:
     container_name: nodejs
     restart: always
     ports:
-      - '4444:4444'
+      - '80:4444'
     env_file: .envs/.node
     volumes:
       - .:/app

@@ -4,8 +4,6 @@ const router = new Router();
 
 
 router.get('/', async (request, response) => {
-   const users = await User.find({});
-   console.log(users);
    response.send('Goodbye world');
 });
 

@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  main-node:
+  node_js:
     build:
       context: .
       dockerfile: ./deploy/nodejs/Dockerfile
-    container_name: nodejs
+    container_name: backend_node_js
     restart: always
     ports:
       - '80:4444'

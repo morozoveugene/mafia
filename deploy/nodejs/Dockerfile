@@ -13,6 +13,6 @@ RUN npm install
 # Копируем установленное
 COPY . .
 # Биндим порт
-EXPOSE 4444
+EXPOSE 8080
 # Запускаем сервис
 CMD ["node", "run.js"]
